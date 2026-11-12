@@ -15,5 +15,6 @@ public class CustomerService {
     @Transactional("mysqlTransactionManager")
     public Customer createCustomer(String name) {
         return customerRepository.save(new Customer(name));
+
     }
 }
